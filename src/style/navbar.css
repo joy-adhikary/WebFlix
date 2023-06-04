@@ -1,0 +1,49 @@
+
+.mobile {
+    display: flex!important;
+    position: fixed;
+    top:7vh;
+    left:0;
+    height: 300px;
+    width: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:white;
+    padding-left: 9px;
+    animation-name: mobile;
+    animation-duration: 2s;
+}
+
+@keyframes mobile {
+
+    0% {
+        top: -300px;
+        left: 0px;
+    }
+
+    100% {
+        top: 60px;
+        left: 0px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .humbugger {
+        display: flex!important;
+    }
+    .navitem {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .humbugger{
+        display: none;
+    }
+    .navitem {
+        display: flex;
+    }
+}
+
