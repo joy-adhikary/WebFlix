@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import './globals.css'
+import Hero from './Components/Hero'
+import Footer from './Components/footer'
 
 const Home = () => {
   return (
-    <main className="flex min-h-screen flex-row justify-between p-24">
-        <div className='flex'>
-          hello
-        </div>  
-    </main>
+    <>
+      <Hero />
+      <Footer/>
+    </>
   )
 }
 
