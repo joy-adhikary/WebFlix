@@ -6,10 +6,11 @@ import Footer from './Components/footer'
 const Home = () => {
   return (
     <>
-      <Hero />
-      <Footer/>
+      <Hero Title={"Lets Explore Movies World Together With Webflix"} Img={"/home.svg"} />
+      <Footer />
     </>
   )
 }
 
 export default Home
+
