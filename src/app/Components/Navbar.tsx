@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="con flex flex-row p-8 bg-white h-20 w-full items-center z-100">
+    <header className="con flex flex-row p-8 bg-white h-20 w-full items-center z-1000000">
       <div className="flex flex-row justify-start">
         <Link href={"/"}>
           <Image src={NavImg} alt="NavImg" width="150" height="100" />

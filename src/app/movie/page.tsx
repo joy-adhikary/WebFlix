@@ -18,16 +18,18 @@ export default function Movie() {
             const response = await fetch(url, options);
             const data = await response.json();
             console.log(data)
-
         } catch (error) {
             console.error("Error:", error);
         }
     }
-    fetchData();
+    // fetchData();
 
 
     return (
         <>
+        <div className='mt-10 mb-5 font-bold text-3xl flex justify-center'>
+            Series and Movies 
+        </div>
         <MovieCards/>
         </>
     )
