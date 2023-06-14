@@ -18,7 +18,7 @@ const Hero = (props: HeroPropsType) => {
                         {Title}
                     </h5>
                     <p className='mt-7 font-light md: text-xl'>
-                        From award-winning dramas to blockbuster action movies, We've got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.
+                        From award-winning dramas to blockbuster action movies,We got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.
                     </p>
                     <Link href="/about">
                         <button className=" bg-black w-40 h-9 mt-6  text-white text-center rounded-2xl hover:text-black hover:bg-cyan-50">
