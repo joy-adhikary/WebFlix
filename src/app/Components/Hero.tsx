@@ -12,15 +12,15 @@ const Hero = (props: HeroPropsType) => {
 
     return (
         <>
-            <div className='main h-full px-1 md:px-2 lg:px-8 flex flex-col-reverse md:flex-row -z-10'>
-                <div className='  flex flex-col font-bold w-full md:w-1/2 justify-center px-24'>
+            <div className='main h-full px-1 md:px-2 lg:px-8 flex flex-col-reverse md:flex-row'>
+                <div className='flex flex-col font-bold w-full md:w-1/2 justify-center px-24'>
                     <h5 className="flex md:text-[45px]">
                         {Title}
                     </h5>
                     <p className='mt-7 font-light md: text-xl'>
                         From award-winning dramas to blockbuster action movies,We got you covered. Browse our selection of the latest and greatest movies, and find your new favorite today.
                     </p>
-                    <Link href="/about">
+                    <Link href="https://jolly-sprite-940071.netlify.app/about">
                         <button className=" bg-black w-40 h-9 mt-6  text-white text-center rounded-2xl hover:text-black hover:bg-cyan-50">
                             Explore Web
                         </button>

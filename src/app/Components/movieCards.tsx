@@ -11,7 +11,7 @@ export default function MovieCards(props: any) {
     // console.log(props)
 
     return (
-        // <div className="max-w-[84rem] grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center lg:mx-auto">
+
             <div className="card bg-base-100 shadow-xl m-6">
                 <figure className=" rounded-md">
                     <Image loader={() => { return ImgUrl }} src={ImgUrl} alt={title} width={400} height={400}/>
@@ -24,6 +24,6 @@ export default function MovieCards(props: any) {
                     </div>
                 </div>
             </div>
-        // </div>
+
     );
 }
