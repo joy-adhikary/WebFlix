@@ -1,7 +1,6 @@
 import React from 'react';
 import MovieCards from '../Components/movieCards';
 import { getMovies } from '@/app/api/Moives'
-import { getMovie } from '@/app/api/Moives'
 
 export default async function Movie() {
 
