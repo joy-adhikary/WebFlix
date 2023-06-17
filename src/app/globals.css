@@ -37,6 +37,14 @@ body {
   /*animation: gradient-bg 20s ease infinite;*/
 }
 
+.main1 {
+  position: relative;
+  background: linear-gradient(-45deg, #121212, #b7bfc0, #c3c1c3);
+  background-size: 400% 400%;
+  height: 90vh;
+  /*animation: gradient-bg 20s ease infinite;*/
+}
+
 .multine-ellipsis {
   -webkit-box-orient: vertical;
   display: -webkit-box;
@@ -45,3 +53,7 @@ body {
   text-overflow: ellipsis;
   white-space: normal;
 }
+
+/* .movie{
+  background-image: linear-gradient(to top, rgba(240, 235, 235, 0), #8f8282);;
+} */

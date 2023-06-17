@@ -8,8 +8,8 @@ export default async function Movie() {
 
     return (
         <>
-            <div className='mt-10 mb-5 font-bold text-3xl flex justify-center'>
-                Series and Movies
+            <div className='mt-10 mb-5 font-bold text-4xl flex justify-center'>
+                Series & Movies
             </div>
             <div className="max-w-[84rem] grid grid-flow-row md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center lg:mx-auto">
                 {
