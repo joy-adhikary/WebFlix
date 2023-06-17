@@ -1,5 +1,5 @@
-// "use client"
-import React from 'react'
+// 'use client'
+
 import { getMovie } from '@/app/api/Moives'
 // import { useSearchParams } from 'next/navigation'
 import Movie from '../page'
@@ -20,7 +20,9 @@ export default async function Page({ params }: { params: { id: string } }) {
                         Webflix <span className=" text-red-600 font-semibold">\ {type} </span>
                     </h4>
                 </div>
+
                 <Image className='m-5 shadow-2xl rounded-2xl' src={ImgUrl} alt="title" width={600} height={500} />
+
                 <div className='m-5'>
                     <h2 className="text-4xl font-extrabold mt-10">
                         {title}

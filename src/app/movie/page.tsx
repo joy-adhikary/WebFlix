@@ -4,6 +4,8 @@ import { getMovies } from '@/app/api/Moives'
 
 export default async function Movie() {
 
+    // await new Promise(resolve => setTimeout(resolve,20000))
+
     const AllMoives = await getMovies()
 
     return (
