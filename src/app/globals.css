@@ -33,17 +33,10 @@ body {
   position: relative;
   background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);
   background-size: 400% 400%;
-  height: 90vh;
+  height: 85vh;
   /*animation: gradient-bg 20s ease infinite;*/
 }
 
-.main1 {
-  position: relative;
-  background: linear-gradient(-45deg, #121212, #b7bfc0, #c3c1c3);
-  background-size: 400% 400%;
-  height: 90vh;
-  /*animation: gradient-bg 20s ease infinite;*/
-}
 
 .multine-ellipsis {
   -webkit-box-orient: vertical;
@@ -52,6 +45,29 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
+}
+
+/* wave curve  */
+.custom-shape-divider-bottom-1687201045 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1687201045 svg {
+  position: relative;
+  display: block;
+  width: calc(105% + 1.3px);
+  height: 178px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1687201045 .shape-fill {
+  fill: #FFFFFF;
 }
 
 /* .movie{
@@ -100,10 +116,12 @@ body {
   width: 80px;
   height: 80px;
 }
+
 .lds-spinner div {
   transform-origin: 40px 40px;
   animation: lds-spinner 1.2s linear infinite;
 }
+
 .lds-spinner div:after {
   content: " ";
   display: block;
@@ -119,59 +137,120 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
+
 .lds-spinner div:nth-child(1) {
   transform: rotate(0deg);
   animation-delay: -1.1s;
 }
+
 .lds-spinner div:nth-child(2) {
   transform: rotate(30deg);
   animation-delay: -1s;
 }
+
 .lds-spinner div:nth-child(3) {
   transform: rotate(60deg);
   animation-delay: -0.9s;
 }
+
 .lds-spinner div:nth-child(4) {
   transform: rotate(90deg);
   animation-delay: -0.8s;
 }
+
 .lds-spinner div:nth-child(5) {
   transform: rotate(120deg);
   animation-delay: -0.7s;
 }
+
 .lds-spinner div:nth-child(6) {
   transform: rotate(150deg);
   animation-delay: -0.6s;
 }
+
 .lds-spinner div:nth-child(7) {
   transform: rotate(180deg);
   animation-delay: -0.5s;
 }
+
 .lds-spinner div:nth-child(8) {
   transform: rotate(210deg);
   animation-delay: -0.4s;
 }
+
 .lds-spinner div:nth-child(9) {
   transform: rotate(240deg);
   animation-delay: -0.3s;
 }
+
 .lds-spinner div:nth-child(10) {
   transform: rotate(270deg);
   animation-delay: -0.2s;
 }
+
 .lds-spinner div:nth-child(11) {
   transform: rotate(300deg);
   animation-delay: -0.1s;
 }
+
 .lds-spinner div:nth-child(12) {
   transform: rotate(330deg);
   animation-delay: 0s;
 }
+
 @keyframes lds-spinner {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
+}
+
+/* animation of hero  */
+
+
+.hero {
+  display: flex !important;
+  position: fixed;
+  top: 18rem;
+  right: 2rem;
+  animation-name: mobile;
+  animation-duration: 2s;
+}
+
+@keyframes mobile {
+  0% {
+    top: 18rem;
+    right: -25rem;
+  }
+
+  100% {
+    top: 18rem;
+    right: 2rem;
+  }
+
+}
+
+.hero1 {
+  display: flex !important;
+  position: fixed;
+  top: 20rem;
+  left: 2rem;
+  animation-name: mobile1;
+  animation-duration: 2s;
+}
+
+@keyframes mobile1 {
+  0% {
+    top: 20rem;
+    left: -25rem;
+  }
+
+  100% {
+    top: 20rem;
+    left: 2rem;
+  }
+
 }
