@@ -9,7 +9,7 @@ export default function MovieCards(props: any) {
     const { id, title, type, synopsis } = props.jawSummary
 
     const ImgUrl = props?.jawSummary?.backgroundImage?.url
-    // console.log(props)
+    
     return (
 
         <div className="card bg-base-100 shadow-xl m-6">

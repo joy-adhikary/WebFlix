@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCards from '../Components/movieCards';
 import { getMovies } from '@/app/api/Moives'
+import Pagination from '../Components/Pagination'
 
 export default async function Movie() {
 
@@ -22,6 +23,7 @@ export default async function Movie() {
                     })
                 }
             </div>
+            <Pagination/>
         </>
     )
 }

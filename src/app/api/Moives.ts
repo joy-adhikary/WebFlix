@@ -10,11 +10,10 @@ const options = {
 };
 
 export async function getMovies() {
-    console.log("xxx", AllUrl);
     const response = await fetch(AllUrl, options);
     const data = await response.json();
     const newData = data.titles;
-    console.log("xx", newData);
+
     return newData;
 }
 
