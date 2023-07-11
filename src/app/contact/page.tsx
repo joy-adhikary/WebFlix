@@ -65,9 +65,11 @@ export default function Contact() {
 
         </div>
       </div>
-      {/* form div */}
-      <div className='x'>
-        x
+
+      <div className='flex'>
+        <div className='text-3xl font-bold mx-auto my-10'>
+          We&apos;d love to hear  <span className=' text-red-600'>from you</span>
+        </div>
       </div>
 
       {/* map */}
