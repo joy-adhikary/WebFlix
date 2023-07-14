@@ -1,6 +1,7 @@
 import Navbar from './Components/Navbar'
 import './globals.css'
 import { Mulish } from 'next/font/google';
+import Footer   from './Components/Footer';
 
 const mulish = Mulish({
   weight: '400',
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={mulish.className}>
-      <Navbar/>
-      {children}
+        <Navbar />
+        {children}
+       <Footer/>
       </body>
+     
     </html>
   )
 }
