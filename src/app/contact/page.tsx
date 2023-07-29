@@ -16,7 +16,7 @@ export default function Contact() {
 
         <div className=' max-w-[84rem] grid grid-flow-row  gap-3 md:grid-flow-col w-screen grid-cols-1 sm:grid-cols-3 p-10 mx-auto justify-items-center'>
 
-          <div className=' w-[21rem]'>
+          <div className='w-[21rem]'>
             <div className=" p-8 bg-white border border-gray-200 rounded-2xl shadow-slate-500 drop-shadow-lg dark:bg-gray-800 dark:border-gray-700">
               <div className='w-10 h-10 mx-auto my-4'>
                 <FontAwesomeIcon icon={faPaperPlane} />
@@ -31,7 +31,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className=' w-[21rem]'>
+          <div className=''>
             <div className=" p-8 bg-white border border-gray-200 rounded-2xl shadow-slate-500 drop-shadow-lg dark:bg-gray-800 dark:border-gray-700">
               <div className='w-12 h-10 mx-auto my-4'>
                 <FontAwesomeIcon icon={faComments} />
@@ -46,7 +46,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className=' w-[21rem]'>
+          <div className=''>
             <div className=" p-8 bg-white border border-gray-200 rounded-2xl shadow-slate-500 drop-shadow-lg dark:bg-gray-800 dark:border-gray-700">
               <div className=' w-12 h-10 mx-auto my-4'>
                 <FontAwesomeIcon icon={faHandHoldingHeart} />

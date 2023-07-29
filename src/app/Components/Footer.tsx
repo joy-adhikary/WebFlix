@@ -25,8 +25,9 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full">
+    <footer className="relative w-full ml-4">
       <div className="mx-auto w-full max-w-7xl px-8">
+
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4">
           {SITEMAP.map(({ title, links }, key) => (
             <div key={key} className="w-full">
@@ -52,7 +53,9 @@ export default function Footer() {
             </div>
           ))}
         </div>
+
         <div className="flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-8 md:flex-row md:justify-between">
+
           <Typography
             variant="medium"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
@@ -60,7 +63,8 @@ export default function Footer() {
             &copy; {currentYear} <a href="https://jolly-sprite-940071.netlify.app/about">Joy adhikary</a>. All
             Rights Reserved.
           </Typography>
-          <div className="flex gap-6 text-blue-gray-900 sm:justify-center">
+
+          <div className="flex gap-6 text-blue-gray-900 sm:justify-center mr-4">
             <Typography as="a" href="#" className="opacity-80 transition-opacity hover:opacity-100">
               <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path
@@ -103,6 +107,7 @@ export default function Footer() {
               </svg>
             </Typography>
           </div>
+          
         </div>
       </div>
     </footer>

@@ -16,6 +16,13 @@
   }
 }
 
+/* *{
+  box-sizing: border-box;
+  margin-left: 0px;
+  margin-right:0px;
+} */
+
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
