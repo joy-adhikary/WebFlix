@@ -1,13 +1,22 @@
+import { getMovies } from '@/app/api/Moives';
 import React from 'react';
+import Pagination from '../Components/Pagination';
 import MovieCards from '../Components/movieCards';
-import { getMovies } from '@/app/api/Moives'
-import Pagination from '../Components/Pagination'
 
-export default async function Movie() {
+export default async function Movie({
+    searchParams,
+}: {
+    searchParams: { [key: string]: string | string[] | undefined }
+}) {
 
     // await new Promise(resolve => setTimeout(resolve,20000))
 
-    const AllMoives = await getMovies()
+    const CurrentPage = searchParams['page'] ?? '1'
+    const dataPerpage = 8
+    const offset = (Number(CurrentPage) - 1) * dataPerpage
+    // const limit = offset + (dataPerpage)
+
+    let AllMoives = await getMovies(dataPerpage,offset)
 
     return (
         <>
@@ -23,7 +32,7 @@ export default async function Movie() {
                     })
                 }
             </div>
-            <Pagination/>
+            <Pagination />
         </>
     )
 }
